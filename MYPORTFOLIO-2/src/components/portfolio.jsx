@@ -14,6 +14,8 @@ import img12 from "../assets/Screenshot (610).png";
 import img13 from "../assets/Screenshot (612).png";
 import img14 from "../assets/Screenshot (614).png";
 import img15 from "../assets/Screenshot (528).png";
+import img16 from "../assets/Screenshot (632).png";
+import img17 from "../assets/Screenshot (633).png";
 
 const Porfolio = () => {
   const [data,] = useState([
@@ -22,6 +24,8 @@ const Porfolio = () => {
     { id: 3, name: "TODO-List", stack: "MERN", img: img15, github: "https://github.com/deepakrawat0007/Todo-UI", dplink: "https://todo-ui-2m1r.onrender.com" },
     { id: 4, name: "Task-Manager", stack: "MERN", img: img12, github: "https://github.com/deepakrawat0007/Task-Manager-APP", dplink: "https://task-manager-omr0.onrender.com" },
     { id: 5, name: "FireBase-Storage", stack: "MERN", img: img13, github: "https://github.com/deepakrawat0007/G-Drive-Clone", dplink: "https://g-drive-clone.onrender.com" },
+    { id: 15, name: "URL-Shortner", stack: "MERN", img: img16, github: "https://github.com/deepakrawat0007/URL-Shortner", dplink: "https://url-shortning-app.onrender.com" },
+    { id: 15, name: "My-PortFolio", stack: "React", img: img17, github: "https://github.com/deepakrawat0007/My-Portfolio-2", dplink: "https://myportfolio-wh32.onrender.com" },
     { id: 6, name: "My-Gallery", stack: "MERN", img: img11, github: "https://github.com/deepakrawat0007/My-Gallery", dplink: "https://my-gallery-app-ui.onrender.com" },
     { id: 7, name: "Book-Search", stack: "React", img: img3, github: "https://github.com/deepakrawat0007/Book-Search", dplink: "https://book-search-app-ui.onrender.com" },
     { id: 8, name: "E-commerce", stack: "React", img: img4, github: "https://github.com/deepakrawat0007/PRT-3", dplink: "https://e-commerce-e1qe.onrender.com" },
@@ -81,8 +85,8 @@ const Porfolio = () => {
                     <p>{app.stack}</p>
                   </div>
                   <div className="portfolio-links">
-                    <a href={app.github} data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bxl-github"></i></a>
-                    <a href={app.dplink} title="More Details"><i className="bx bx-link"></i></a>
+                    <a href={app.github} data-gallery="portfolioGallery" className="portfolio-lightbox" title="Github-Link"><i className="bx bxl-github"></i></a>
+                    <a href={app.dplink} title="Live Link"><i className="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>)):filterList?.map((app)=>(<div className="col-lg-4 col-md-6 portfolio-item filter-web" key={app.id}>
