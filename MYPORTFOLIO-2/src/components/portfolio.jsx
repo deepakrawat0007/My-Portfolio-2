@@ -25,7 +25,7 @@ const Porfolio = () => {
     { id: 4, name: "Task-Manager", stack: "MERN", img: img12, github: "https://github.com/deepakrawat0007/Task-Manager-APP", dplink: "https://task-manager-omr0.onrender.com" },
     { id: 5, name: "FireBase-Storage", stack: "MERN", img: img13, github: "https://github.com/deepakrawat0007/G-Drive-Clone", dplink: "https://g-drive-clone.onrender.com" },
     { id: 15, name: "URL-Shortner", stack: "MERN", img: img16, github: "https://github.com/deepakrawat0007/URL-Shortner", dplink: "https://url-shortning-app.onrender.com" },
-    { id: 15, name: "My-PortFolio", stack: "React", img: img17, github: "https://github.com/deepakrawat0007/My-Portfolio-2", dplink: "https://myportfolio-wh32.onrender.com" },
+    { id: 16, name: "My-PortFolio", stack: "React", img: img17, github: "https://github.com/deepakrawat0007/My-Portfolio-2", dplink: "https://myportfolio-wh32.onrender.com" },
     { id: 6, name: "My-Gallery", stack: "MERN", img: img11, github: "https://github.com/deepakrawat0007/My-Gallery", dplink: "https://my-gallery-app-ui.onrender.com" },
     { id: 7, name: "Book-Search", stack: "React", img: img3, github: "https://github.com/deepakrawat0007/Book-Search", dplink: "https://book-search-app-ui.onrender.com" },
     { id: 8, name: "E-commerce", stack: "React", img: img4, github: "https://github.com/deepakrawat0007/PRT-3", dplink: "https://e-commerce-e1qe.onrender.com" },
