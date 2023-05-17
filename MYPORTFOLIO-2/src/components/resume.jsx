@@ -70,12 +70,11 @@ a focus on full stack development.</em></p>
               </ul>
             </div>
             <div className="resume-item">
-              <h4>MyGallery</h4>
+              <h4>URL Shortner</h4>
               <p><em>Tech Stack - MERN</em></p>
               <ul>
-                <li>Users can search for photos by label.</li>
-                <li>Users can add a new photo to the list.</li>
-                <li>When users try to delete an image popup to enter their password will Appear.</li>
+                <li>Users can shorten the long url links.</li>
+                <li>Used ShortId for generating short unique Ids.</li>
                 <li>Used react-toast for alert Messages.</li>
               </ul>
             </div>
