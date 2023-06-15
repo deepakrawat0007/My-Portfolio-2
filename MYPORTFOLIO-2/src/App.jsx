@@ -1,25 +1,17 @@
-import About from './components/about'
-import Fact from './components/facts'
-import Footer from './components/footer'
-import Header from './components/header'
-import Hero from './components/heroSection'
-import Porfolio from './components/portfolio'
-import Resume from './components/resume'
-import Skill from './components/skill'
+import { BrowserRouter , Route , Routes } from "react-router-dom"
 import "./style.css"
+import MainPage from "./components/MainPage"
+import { AdminPage } from "./components/AdminPage"
 
 const App = () =>{
   return (
-    <>
-    <Header/>
-    <Hero/>
-    <About/>
-    <Fact/>
-    <Skill/>
-    <Resume/>
-    <Porfolio/>
-    <Footer/>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route element={<MainPage/>} path="/"/>
+      <Route element={<AdminPage/>} path="/AdminPanel"/>
+    </Routes>
+    </BrowserRouter>
+
   )
 }
 

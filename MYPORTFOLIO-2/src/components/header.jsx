@@ -1,8 +1,21 @@
+import { useState } from "react"
+import PopUpModal from "./popUpModal";
 
 const Header = ()=>{
+  const [popUp , setPopUp] = useState(false);
+
+
+  const handlePop = () =>{
+    setPopUp(true)
+  }
+
+  const closePopUp = () =>{
+    setPopUp(false)
+  }
     return(
         <>
-        {/* <!-- ======= Mobile nav toggle button ======= --> */}
+        {popUp?(<PopUpModal closePopUp={closePopUp}/>):''}
+        
   <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
   {/* <!-- ======= Header ======= --> */}
@@ -20,10 +33,12 @@ const Header = ()=>{
           
         </div>
       </div>
+      
 
       <nav id="navbar" className="nav-menu navbar">
         <ul>
           <li><a href="#hero" className="nav-link scrollto active"><i className="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a className="nav-link scrollto active" style={{cursor:"pointer"}} onClick={handlePop}><i className="bx bx-home"></i> <span>Admin Panel</span></a></li>
           <li><a href="#about" className="nav-link scrollto"><i className="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" className="nav-link scrollto"><i className="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio" className="nav-link scrollto"><i className="bx bx-book-content"></i> <span>Portfolio</span></a></li>
